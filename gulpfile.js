@@ -11,35 +11,40 @@
 // 	}));
 // });
 
-
 var gulp = require('gulp');
 var connect = require('gulp-connect');
 var open = require('gulp-open');
- 
+var port = '8888'
+var root = 'app'
+ //setup connect server
 gulp.task('connect', function() {
 	connect.server({
-		root: 'app',
+		root: root,
 		livereload: true,
-		port: 8888
+		port: port
 	});
 });
  
-gulp.task('html', function () {
-	gulp.src('./app/index.html')
+ //reload data
+gulp.task('reload', function () {
+	gulp.src('./' + root + '/index.html')
 	.pipe(connect.reload());
 });
  
+//watch changes in files
 gulp.task('watch', function () {
-	gulp.watch(['./app/**/*.*', ], ['html']);
+	gulp.watch(['./' + root + '/**/*.*', ], ['reload']);
 });
 
-gulp.task('open-browser', function(){
+//open browser
+gulp.task('openBrowser', function(){
 	var options = {
-		uri: 'http://localhost:8888',
+		uri: 'http://localhost:'+port,
 		app: 'google chrome'
 	};
-	gulp.src('./app/index.html')
+	gulp.src('./' + root + '/index.html')
 	.pipe(open(options));
 });
  
-gulp.task('default', ['connect', 'watch', 'open-browser']);
+ //default task
+gulp.task('default', ['connect', 'watch', 'openBrowser']);
