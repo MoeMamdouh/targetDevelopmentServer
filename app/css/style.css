@@ -150,7 +150,7 @@ html, body{
 .header-right nav {
     position: absolute;
     top: -87%;
-    left: -4%;
+    left: 23%;
     color: #999;
 }
 .header-right nav ul li.animate {
@@ -567,7 +567,7 @@ html, body{
   fill: #b3b3b3;
 }
 .page-header__content .text-bg svg #title1, .page-header__content .text-bg svg #title2, .page-header__content .text-bg svg #title3, .page-header__content .text-bg svg #title4 {
-    font-size: 5em;
+    font-size: 16em;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 12px;
