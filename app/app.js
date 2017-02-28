@@ -32,12 +32,13 @@ var target = angular.module('target', [
 .config(function ($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise('/home');
 	$stateProvider
-	.state('/', {
+	.state('/banner', {
 		url: '/',
 		templateUrl: 'modules/main/main.html',
 		controller: 'mainCtrl',
 	})
-	.state('/home', {
+	.state('home', {
+		url: '/home',
 		templateUrl: 'modules/main/main.html',
 		controller: 'mainCtrl',
 	})
