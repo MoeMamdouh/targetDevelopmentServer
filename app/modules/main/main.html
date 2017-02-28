@@ -1,1 +1,48 @@
-<h3>Main Controller View</h3>
+    <div class="banner bg-about">
+		<div class="header-top about-header-top">
+			<div class="container banner-drop">
+				<div class="agile-logo">
+					<h1><a href="index.html">Bike<span>World</span></a></h1>
+				</div>
+				<div class="header-right">
+						<nav>
+						  <ul>
+							<li>
+								<a href="index.html"><span>Home</span></a>
+							</li>
+							<li class="active">
+								<a href="about.html"><span>About</span></a>
+							</li>
+							<li>
+								<a href="short-codes.html"><span>Short Codes</span></a>
+							</li>
+							<li>
+								<a href="gallery.html"><span>Gallery</span></a>
+							</li>
+							<li>
+								<a href="training.html"><span>Training</span></a>
+							</li>
+							<li>
+								<a href="mail.html"><span>Mail Us</span></a>
+							</li>
+						  </ul>
+						</nav>
+						<div class="menu-icon"><span></span></div>
+				</div>
+				<div class="clearfix"> </div>
+				<script>
+					(function($){
+					  $(".menu-icon").on("click", function(){
+							$(this).toggleClass("open");
+							$(".container").toggleClass("nav-open");
+							$("nav ul li").toggleClass("animate");
+					  });
+					  
+					})(jQuery);
+				</script>
+			</div>
+		</div>
+		<div class="w3ls-heading">
+			<h2>About Us</h2>	
+		</div>
+	</div>
