@@ -1,0 +1,161 @@
+{
+	"MAIN": {
+		"BACK": "Back",
+		"YES": "Yes",
+		"NO": "No",
+		"DONE":"Done",
+		"SAVE":"Save",
+		"MORE":"more",
+		"LESS":"less",
+		"LOADING":"Loading",
+		"PAGES" : "Pages",
+		"EVENTS" : "Events",
+		"NEWS" : "News",
+		"JOBS" : "Jobs",
+		"ALERTS":{
+			"LOGOUT":"Logging out....",
+			"FEATURE_UNAVAILABLE":"This feature is unavailable on Blackberry"
+		}
+	},
+	"ERROR_MESSAGES": {
+		"NO_INTERNET": "No internet connection! The content is not available while you are offline",
+		"PERMISSION": "there are no permisson to open file",
+		"NOT_AVAILABLE": "We are sorry, the requested page is not available at the moment.",
+		"INVALID_USER":"Your login-session is invalid in case of security reasons. Please login again with your account!"
+	},
+	"DASHBOARD": {
+		"TITLE":"Dashboard",
+		"ABOUT_MAGNA": "About Magna",
+		"CAREER": "Career"
+	},
+	"MYLIFE": {
+		"TITLE":"mylife",
+		"DISCOUNTS":"Offers & Discounts",
+		"DISCOUNTS_EMP_TITLE":"Works Council",
+		"DOCUMENTS":"Documents",
+		"ABOUT_MAGNA":"ABOUT MYLIFE@MAGNA",
+		"NO_DATA": "There is no data",
+		"ANNOUNCE_TEXT": "More than 150 discounts and promotions can be found in the Magna Steyr Intranet",
+		"ANNOUNCE_LINK": "Magna Steyr Intranet.",
+		"ACTIONS_DISCOUNTS":"PROMOTIONS AND DISCOUNTS FOR EMPLOYEES",
+		"EMPLOYEE_DISCOUNTS":"WORKS COUNCIL",
+		"CANTEEN_MENU":"CANTEEN MENU"
+	},
+	"AUTH": {
+		"Register": "Register",
+		"Log-in": "Log-in",
+		"Skip": "Skip",
+		"Terms_of_Service": "Terms of service",
+		"Please_Enter_Valid_Data": "Please enter valid data",
+		"No_account_yet?_Register": "No account yet? Register",
+		"Required_fields": "*Required fields",
+		"password_match_error": "Password and confirm password doesn't match",
+		"E-Mail": "E-Mail*",
+		"Password": "Password*",
+		"First_Name": "First name*",
+		"Last_Name": "Last name*",
+		"Date_of_birth": "Date of birth",
+		"Confirm _Password": "Confirm password*",
+		"Location":"Location",
+		"Language":"Language",
+		"Forget_Password":"Forgotten your password?",
+		"Gender":"Gender",
+		"Male":"Male",
+		"Female":"Female",
+		"Telephone":"Telephone",
+		"My_Profile":"Profile",
+		"EMPTY_FIELDS_ERROR":"Please fill out all mandatory fields.",
+		"ALREADY_REGISTERED":"The email address is already registered.",
+		"CONFIRMATION_EMAIL":"You will receive a confirmation by e-mail. (Please also check your spam folder)",
+		"NOT_VALID_DATA":"Please enter a valid e-mail address and password.",
+		"INVALID_DATE":"Invalid Date.",
+		"LANG_LOC_ERROR":"Please select location and language.",
+		"INVALID_EMAIL": "Please enter a valid e-mail",
+		"REQUEST_NEW_PASSWORD": "Request new password",
+		"FORGET_PASSWORD_SUCCESS": "You will shortly receive an e-mail with an automatic created password"
+	},
+	"SEETINGS": {
+		"TITLE":"Settings",
+		"Profile": "Profile",
+		"Notifications": "Notifications",
+		"Language_Location": "Language & location",
+		"Feedback": "Feedback",
+		"rate_the_app": "Rate the app",
+		"About": "About",
+		"CHANGE_PASSWORD": "Change password",
+		"Log_out": "Log out",
+		"Log-in": "Log in",
+		"CHOOSE_FROM_GALLERY":"Select profile picture",
+		"TAKE_A_PIC":"Take a new profile picture",
+		"TERMS":"Terms of use and privacy policy",
+		"COPY_RIGHTS":"Copyright",
+		"IMPRESS":"Imprint",
+		"VERSION":"Version"
+	},
+	"CHANGE_PASSWORD":{
+		"OLD": "Old password",
+		"NEW1": "New password",
+		"NEW2": "Confirm new password",
+		"CHANGE": "Change password",
+		"ERRORS": {
+			"FILL_DATA":"Please fill out all fields.",
+			"PASSWORD_LENGTH":"The password must be at least 6 characters long.",
+			"PASSWORD_MATCH":"The password don't match.",
+			"NEW_PASSWORD":"Please change the new password.",
+			"PASSWORD_INVALID":"Please enter valid password."
+		}
+	},
+	"SEARCH" : {
+		"TITLE":"Search",
+		"NO_DATA": "No search results",
+		"SEARCH_INPUT":"Search"
+	},
+	"LANGLOC" : {
+		"TITLE":"Language & location"
+	},
+	"FAVOURITES" : {
+		"TITLE":"Favourites",
+		"ADDED_TO_FAVOURITES":"The subject has been added to your favorites",
+		"ALREADY_ADDED":"You have already added this subject to your favorites."
+	},
+	"CAREER" : {
+		"TITLE":"Career",
+		"TITLE2":"Jobs",
+		"NO_DATA": "There are no jobs",
+		"DESCRIPTION": "Job description:",
+		"REQUIREMENTS": "Our requirements:",
+		"VACANCIES": "Opportunities"
+	},
+	"EVENTS": {
+		"TITLE":"Events",
+		"TO":"to",
+		"FILTER_POPUP": {
+			"TOPICS": "Topics",
+			"CATEGORY": "Category",
+			"APPLY": "Apply",
+			"CANCEL": "Cancel"
+		},
+		"REGISTER_MODAL": {
+			"HEADER1": "Registration to:",
+			"HEADER2": "Would you like to register for this event?",
+			"TEXT2A": "Thank you for signing up",
+			"TEXT2B": "You will soon receive an email with more information about your booked event."
+		},
+		"NO_DATA": "No event in this month",
+		"WHEN_WHERE": "When & where:",
+		"DESCRIPTION": "Description:",
+		"SUBSCRIBE": "Subscribe",
+		"REPORT": "Gallery:"
+	},
+	"NEWS": {
+		"TITLE":"News",
+		"NO_DATA": "No news in this month"
+	},
+	"INFOTAINMENT": {
+		"TITLE":"Infotainment"
+	},
+	"INTRO": {
+		"CONTINUE": "Continue",
+		"HERE_WE_GO": "Go!"
+	}
+}

@@ -1,0 +1,161 @@
+{
+	"MAIN": {
+		"BACK": "Back",
+		"YES": "Ja",
+		"NO": "Nein",
+		"DONE":"Erledigt",
+		"SAVE":"Speichern",
+		"MORE":"mehr",
+		"LESS":"weniger",
+		"LOADING":"Laden",
+		"PAGES" : "Seiten",
+		"EVENTS" : "Events",
+		"NEWS" : "News",
+		"JOBS" : "Jobs",
+		"ALERTS":{
+			"LOGOUT": "Ausloggen...",
+			"FEATURE_UNAVAILABLE":"Diese Funktion ist auf BLACKBERRY nicht verfügbar"
+		}
+	},
+	"ERROR_MESSAGES": {
+		"NO_INTERNET": "Keine Internetverbindung! Der Inhalt ist nicht verfügbar während Sie offline sind",
+		"PERMISSION": "Es gibt keine Berechtigung zum Öffnen der Datei",
+		"NOT_AVAILABLE": "Leider ist die angeforderte Seite im Moment nicht verfügbar.",
+		"INVALID_USER":"Ihre Login-Session ist Sicherheitsgründen abgelaufen. Bitte melden Sie sich erneut mit Ihrem Account an!"
+	},
+	"DASHBOARD": {
+		"TITLE":"Dashboard",
+		"ABOUT_MAGNA": "Über Magna",
+		"CAREER": "Karriere"
+	},
+	"MYLIFE": {
+		"TITLE":"mylife",
+		"DISCOUNTS":"Aktionen & Rabatte",
+		"DISCOUNTS_EMP_TITLE":"Betriebsrat",
+		"DOCUMENTS":"Unterlagen",
+		"ABOUT_MAGNA":"ÜBER MYLIFE@MAGNA",
+		"NO_DATA": "Es gibt keine Daten",
+		"ANNOUNCE_TEXT": "Über 150 weitere Rabatte und Aktionen finden Sie im",
+		"ANNOUNCE_LINK": "Magna Steyr Intranet.",
+		"ACTIONS_DISCOUNTS":"AKTIONEN UND RABATTE FÜR MITARBEITER",
+		"EMPLOYEE_DISCOUNTS":"BETRIEBSRAT",
+		"CANTEEN_MENU":"MENÜPLAN KANTINE"
+	},
+	"AUTH": {
+		"Register": "Registrieren",
+		"Log-in": "Einloggen",
+		"Skip": "Überspringen",
+		"Terms_of_Service": "Allgemeine Geschäftsbedingungen",
+		"Please_Enter_Valid_Data": "Bitte geben Sie eine gültige Daten",
+		"No_account_yet?_Register": "Noch keinen Account? Registrieren",
+		"Required_fields": "*Pflichtfelder",
+		"password_match_error": "Passwort ein und bestätigen Passwort stimmt nicht überein",
+		"E-Mail": "E-Mail*",
+		"Password": "Passwort*",
+		"First_Name": "Vorname*",
+		"Last_Name": "Nachname*",
+		"Date_of_birth": "Geburtsdatum",
+		"Confirm _Password": "Passwort bestätigen*",
+		"Location": "Standort",
+		"Language": "Sprache",
+		"Forget_Password":"Passwort vergessen?",
+		"Gender":"Geschlecht",
+		"Male":"Männlich",
+		"Female":"Weiblich",
+		"Telephone":"Telefon",
+		"My_Profile":"Profil",
+		"EMPTY_FIELDS_ERROR":"Bitte füllen Sie alle Pflichtfelder aus.",
+		"ALREADY_REGISTERED":"Die E-Mail-Adresse ist bereits registriert.",
+		"CONFIRMATION_EMAIL":"Sie erhalten eine Bestätigung per E-Mail. (Sehen sie auch in Ihrem Spam-Ordner nach)",
+		"NOT_VALID_DATA":"Bitte geben Sie eine gültige E-Mail-Adresse und Passwort ein.",
+		"INVALID_DATE":"Ungültiges Datum.",
+		"LANG_LOC_ERROR":"Bitte wählen Sie Standort und Sprache aus.",
+		"INVALID_EMAIL": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+		"REQUEST_NEW_PASSWORD": "Neues Passwort anfordern",
+		"FORGET_PASSWORD_SUCCESS": "Sie erhalten in Kürze eine E-Mail mit Ihrem neuen, automatisch erstellten Kennwort. (Sehen sie auch in Ihrem Spam-Ordner nach)"
+	},
+	"SEETINGS": {
+		"TITLE":"Einstellungen",
+		"Profile": "Profil",
+		"Notifications": "Benachrichtigungen",
+		"Language_Location": "Sprache & Standort",
+		"Feedback": "Feedback",
+		"rate_the_app": "App bewerten",
+		"About": "Über",
+		"CHANGE_PASSWORD": "Passwort ändern",
+		"Log_out": "Ausloggen",
+		"Log-in": "Einloggen",
+		"CHOOSE_FROM_GALLERY":"Profilbild auswählen",
+		"TAKE_A_PIC":"Neues profilbild aufnehmen",
+		"TERMS":"Datenschutzerklärung & Nutzungsbedingungen",
+		"COPY_RIGHTS":"Urheberrecht",
+		"IMPRESS":"Impresssum",
+		"VERSION":"Version"
+	},
+	"CHANGE_PASSWORD":{
+		"OLD": "Altes Passwort",
+		"NEW1": "Neues Passwort",
+		"NEW2": "Neues Passwort bestätigen",
+		"CHANGE": "Passwort ändern",
+		"ERRORS": {
+			"FILL_DATA":"Bitte füllen Sie alle Felder aus.",
+			"PASSWORD_LENGTH":"Das Passwort muss mindestens 6 Zeichen lang sein.",
+			"PASSWORD_MATCH":"Die Passwörter stimmen nicht überein.",
+			"NEW_PASSWORD":"Bitte ändern Sie Ihr neues Passwort.",
+			"PASSWORD_INVALID":"Bitte geben Sie ein gültiges Passwort ein."
+		}
+	},
+	"SEARCH" : {
+		"TITLE":"Suche",
+		"NO_DATA": "Leider keine Suchergebnisse",
+		"SEARCH_INPUT":"Suche"
+	},
+	"LANGLOC" : {
+		"TITLE":"Sprache & Standort"
+	},
+	"FAVOURITES" : {
+		"TITLE":"Favoriten",
+		"ADDED_TO_FAVOURITES":"Der Inhalt wurde zu Ihren Favoriten hinzugefügt.",
+		"ALREADY_ADDED":"Sie haben diesen Inhalt bereits zu Ihren Favoriten hinzugefügt."
+	},
+	"CAREER" : {
+		"TITLE":"Karriere",
+		"TITLE2":"Arbeitsplätze",
+		"NO_DATA": "Es gibt keine Arbeitsplätze",
+		"DESCRIPTION": "Arbeitsbeschreibung:",
+		"REQUIREMENTS": "Unsere Anforderungen:",
+		"VACANCIES": "Stellenangebote"
+	},
+	"EVENTS": {
+		"TITLE":"Events",
+		"TO":"bis",
+		"FILTER_POPUP": {
+			"TOPICS": "Themencluster",
+			"CATEGORY": "Kategorie",
+			"APPLY": "Anwenden",
+			"CANCEL": "Abbrechen"
+		},
+		"REGISTER_MODAL": {
+			"HEADER1": "Anmeldung zu:",
+			"HEADER2": "Möchten Sie sich verbindlich zu diesem Event anmelden?",
+			"TEXT2A": "Vielen Dank für Ihre Anmeldung.",
+			"TEXT2B": "Sie erhalten in Kürze eine E-Mail mit weiteren informationen zu Ihrem gebuchten Event."
+		},
+		"NO_DATA": "Keine Veranstaltung in diesem Monat",
+		"WHEN_WHERE": "Wann & Wo:",
+		"DESCRIPTION": "Beschreibung:",
+		"SUBSCRIBE": "Anmelden",
+		"REPORT": "Galerie:"
+	},
+	"NEWS": {
+		"TITLE":"News",
+		"NO_DATA": "Keine Nachrichten in diesem Monat"
+	},
+	"INFOTAINMENT": {
+		"TITLE":"Infotainment"
+	},
+	"INTRO": {
+		"CONTINUE": "Weiter",
+		"HERE_WE_GO": "Los geht‘s!"
+	}
+}
