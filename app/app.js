@@ -32,7 +32,15 @@ var target = angular.module('target', [
 				templateUrl: 'modules/home/home.html',
 				controller: 'homeCtrl',
 			}
-		  }
-		
+		}
+	})
+	.state('Main.about', {
+		url: '/about',
+		views: {
+			'container@': {
+				templateUrl: 'modules/about/about.html',
+				controller: 'aboutCtrl',
+			}
+		}
 	})
 });
