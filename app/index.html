@@ -23,7 +23,14 @@
 	</head>
 
 	<body ng-app="target">
-		<ui-view></ui-view>
+		<!--<ui-view></ui-view>-->
+		<header>
+			<div ui-view="banner"></div>
+		</header>
+		<div ui-view="container">
+		</div>
+		<footer id="mainFooter" ui-view="footer">
+		</footer>
 
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/bootstrap.js"></script>
@@ -48,7 +55,9 @@
 		<!-- your app's js -->
 		<script src="app.js"></script>
 
-		<script type="text/javascript" src="modules/main/mainCtrl.js"></script>
+		<script type="text/javascript" src="modules/banner/bannerCtrl.js"></script>
+		<script type="text/javascript" src="modules/footer/footerCtrl.js"></script>
+		<script type="text/javascript" src="modules/home/homeCtrl.js"></script>
 	</body>	
 </html>
 

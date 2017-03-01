@@ -1,24 +1,3 @@
-// 'use strict';
-
-// var commonDir = 'common';
-// var directivesDir = commonDir + '/directives';
-// var filtersDir = commonDir + '/filters';
-// var servicesDir = commonDir + '/services';
-// var target = angular.module('target', [
-// 	'ngResource',
-// 	'ngRoute',
-// ])
-// .config(function ($routeProvider) {
-// $routeProvider
-// 	.when('/', {
-// 		templateUrl: 'modules/main/main.html',
-// 		controller: 'mainCtrl',
-// 	})
-// 	.otherwise({
-// 		redirectTo: '/test'
-// 	});
-// });
-
 'use strict';
 
 var commonDir = 'common';
@@ -30,17 +9,30 @@ var target = angular.module('target', [
 	'ui.router',
 ])
 .config(function ($stateProvider, $urlRouterProvider) {
-	$urlRouterProvider.otherwise('/home');
+	$urlRouterProvider.otherwise('home');
 	$stateProvider
-	.state('/banner', {
-		url: '/',
-		templateUrl: 'modules/main/main.html',
-		controller: 'mainCtrl',
+	.state('Main', {
+		views: {
+			'banner': {
+				templateUrl: 'modules/banner/banner.html',
+				controller: 'bannerCtrl',
+			},
+			'footer': {
+				templateUrl: 'modules/footer/footer.html',
+				controller: 'footerCtrl',
+			}
+		},
+		url: '',
+		abstract: true,
 	})
-	.state('home', {
+	.state('Main.home', {
 		url: '/home',
-		templateUrl: 'modules/main/main.html',
-		controller: 'mainCtrl',
+		views: {
+			'container@': {
+				templateUrl: 'modules/home/home.html',
+				controller: 'homeCtrl',
+			}
+		  }
+		
 	})
-
 });
