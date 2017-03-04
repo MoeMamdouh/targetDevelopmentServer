@@ -2,6 +2,7 @@
     appKey: "target",
     appTitle: "Target",
     appName: "Target",
+    appYear: "2017",
     // appImage: "img/home/mpt-bg.png",
     // api: "http://api.magna-exponate-table.sps-digital.com/index.php/",
     // appDefaultLanguage: "en",
@@ -58,4 +59,9 @@
 
     ],
     languagesObject: ["en"]
+}
+
+var Do = {
+    Do: 'Do 2012',
+    DoUrl: 'https://www.facebook.com/Do.technology',
 }
