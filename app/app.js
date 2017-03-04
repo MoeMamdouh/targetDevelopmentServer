@@ -27,6 +27,7 @@ var target = angular.module('target', [
 	})
 	.state('Main.home', {
 		url: '/home',
+		module: 'home',
 		views: {
 			'container@': {
 				templateUrl: 'modules/home/home.html',
@@ -36,6 +37,7 @@ var target = angular.module('target', [
 	})
 	.state('Main.about', {
 		url: '/about',
+		module: 'about',
 		views: {
 			'container@': {
 				templateUrl: 'modules/about/about.html',
@@ -45,6 +47,7 @@ var target = angular.module('target', [
 	})
 	.state('Main.news', {
 		url: '/news',
+		module: 'news',
 		views: {
 			'container@': {
 				templateUrl: 'modules/news/news.html',
@@ -54,6 +57,7 @@ var target = angular.module('target', [
 	})
 	.state('Main.gallery', {
 		url: '/gallery',
+		module: 'gallery',
 		views: {
 			'container@': {
 				templateUrl: 'modules/gallery/gallery.html',
@@ -63,6 +67,7 @@ var target = angular.module('target', [
 	})
 	.state('Main.videos', {
 		url: '/videos',
+		module: 'videos',
 		views: {
 			'container@': {
 				templateUrl: 'modules/videos/videos.html',
@@ -72,6 +77,7 @@ var target = angular.module('target', [
 	})
 	.state('Main.schedules', {
 		url: '/schedules',
+		module: 'schedules',
 		views: {
 			'container@': {
 				templateUrl: 'modules/schedules/schedules.html',
@@ -81,6 +87,7 @@ var target = angular.module('target', [
 	})
 	.state('Main.shops', {
 		url: '/shops',
+		module: 'shops',
 		views: {
 			'container@': {
 				templateUrl: 'modules/shops/shops.html',
@@ -90,6 +97,7 @@ var target = angular.module('target', [
 	})
 	.state('Main.mail', {
 		url: '/mail',
+		module: 'mail',
 		views: {
 			'container@': {
 				templateUrl: 'modules/mail/mail.html',

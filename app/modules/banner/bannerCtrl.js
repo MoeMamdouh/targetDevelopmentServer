@@ -5,9 +5,21 @@
 
 	function bannerCtrl($scope, doStates) {
 		$scope.menus = config.menu;
-		$scope.selectedMenuItem = $scope.menus[0]
+		$scope.selectedMenuItem = getStartedMenuObject();
+		//functions
+		$scope.menuItemClicked = menuItemClicked;
+
+
 		
-		$scope.menuItemClicked = function(menuItem) {
+		
+		function getStartedMenuObject() {
+			//get state name
+			var stateModule = doStates.getStateModule();
+			$scope.selectedMenuItem = _.findWhere($scope.menus, {name: stateModule});
+			return $scope.selectedMenuItem
+		}
+		function menuItemClicked(menuItem) {
+			console.log('menuItem', menuItem)
 			$scope.selectedMenuItem = menuItem;
 			var state = 'Main.' + $scope.selectedMenuItem.name;
 			doStates.goState(state);

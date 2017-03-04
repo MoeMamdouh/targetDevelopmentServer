@@ -11,6 +11,9 @@
 		function getStateName() {
 			return $state.current.name;
 		}
+		function getStateModule() {
+			return $state.current.module;
+		}
 		function getViewName() {
 			var stateViews = _.keys($state.current.views)
 			return stateViews[0];
@@ -29,6 +32,7 @@
 		// }
 
 		returnedData.getStateName   = getStateName;
+		returnedData.getStateModule	= getStateModule;
 		returnedData.getViewName    = getViewName;
 		returnedData.goState        = goState;
 	
