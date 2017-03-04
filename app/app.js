@@ -43,4 +43,58 @@ var target = angular.module('target', [
 			}
 		}
 	})
+	.state('Main.news', {
+		url: '/news',
+		views: {
+			'container@': {
+				templateUrl: 'modules/news/news.html',
+				controller: 'newsCtrl',
+			}
+		}
+	})
+	.state('Main.gallery', {
+		url: '/gallery',
+		views: {
+			'container@': {
+				templateUrl: 'modules/gallery/gallery.html',
+				controller: 'galleryCtrl',
+			}
+		}
+	})
+	.state('Main.videos', {
+		url: '/videos',
+		views: {
+			'container@': {
+				templateUrl: 'modules/videos/videos.html',
+				controller: 'videosCtrl',
+			}
+		}
+	})
+	.state('Main.schedules', {
+		url: '/schedules',
+		views: {
+			'container@': {
+				templateUrl: 'modules/schedules/schedules.html',
+				controller: 'schedulesCtrl',
+			}
+		}
+	})
+	.state('Main.shops', {
+		url: '/shops',
+		views: {
+			'container@': {
+				templateUrl: 'modules/shops/shops.html',
+				controller: 'shopsCtrl',
+			}
+		}
+	})
+	.state('Main.mail', {
+		url: '/mail',
+		views: {
+			'container@': {
+				templateUrl: 'modules/mail/mail.html',
+				controller: 'mailCtrl',
+			}
+		}
+	})
 });

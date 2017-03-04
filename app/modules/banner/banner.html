@@ -7,7 +7,11 @@
 				<div class="header-right">
 					<nav>
 						<ul>
-							<li ng-class="{'active': state=='home'}" ng-click="openItem('home')">
+							<li ng-repeat="menuItem in menus" ng-class="{'active': selectedMenuItem.name==menuItem.name}" ng-click="menuItemClicked(menuItem)" >
+								<a href="#"><span>{{menuItem.renderName}}</span></a>
+							</li>
+
+							<!--<li ng-class="{'active': state=='home'}" ng-click="openItem('home')">
 								<a href="#"><span>Home</span></a>
 							</li>
 
@@ -29,7 +33,7 @@
 
 							<li ng-click="openItem('home')">
 								<a href="#"><span>Mail Us</span></a>
-							</li>
+							</li>-->
 						</ul>
 					</nav>
 					<div class="menu-icon"><span></span></div>
@@ -48,6 +52,6 @@
 			</div>
 		</div>
 		<div class="w3ls-heading">
-			<h2>About Us</h2>	
+			<h2>{{selectedMenuItem.renderName}}</h2>	
 		</div>
 	</div>
