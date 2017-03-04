@@ -1,14 +1,11 @@
 ﻿var config = {
-    // appKey: "mpt",
-    // appTitle: "MPTDriving",
-    // appName: "MPTDriving",
+    appKey: "target",
+    appTitle: "Target",
+    appName: "Target",
     // appImage: "img/home/mpt-bg.png",
     // api: "http://api.magna-exponate-table.sps-digital.com/index.php/",
     // appDefaultLanguage: "en",
     // appVersion: "1.0.0",
-    // statusBar: "default",
-    // requireLogin: false,
-    // openContentImage: true,
     menu: [
 		{
 			id:	1,
