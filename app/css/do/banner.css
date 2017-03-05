@@ -1,5 +1,5 @@
 .banner.bg-about {
-  background: #000; }
+  background: #000 !important; }
   .banner.bg-about .header-top {
     background: transparent !important; }
     .banner.bg-about .header-top .agile-logo h1 a span {

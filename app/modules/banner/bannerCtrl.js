@@ -9,9 +9,6 @@
 		$scope.selectedMenuItem = getStartedMenuObject();
 		//functions
 		$scope.menuItemClicked = menuItemClicked;
-
-
-		
 		
 		function getStartedMenuObject() {
 			//get state name
