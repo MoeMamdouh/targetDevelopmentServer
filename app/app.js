@@ -8,6 +8,12 @@ var target = angular.module('target', [
 	'ngResource',
 	'ui.router',
 ])
+.run(function($rootScope) {
+	$rootScope.appYear	 = config.appYear;
+	$rootScope.appName 	= config.appName;
+	$rootScope.Do 		= Do.Do;
+	$rootScope.DoUrl 	= Do.DoUrl;
+})
 .config(function ($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise('home');
 	$stateProvider

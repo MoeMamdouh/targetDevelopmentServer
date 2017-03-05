@@ -4,6 +4,5 @@
 	homeCtrl.$injector = ['$scope'];
 
 	function homeCtrl($scope) {
-      	//   alert('home')
 	}
 })();
