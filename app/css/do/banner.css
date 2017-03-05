@@ -23,3 +23,17 @@
     @media (max-width: 200px) {
       .banner .header-right nav ul li {
         margin: 1em 0em; } }
+    .banner .header-right nav ul li:nth-child(7) {
+      -moz-transition: top 0.3s ease 0.40s;
+      -o-transition: top 0.3s ease 0.40s;
+      -webkit-transition: top 0.3s ease;
+      -webkit-transition-delay: 0.40s;
+      -webkit-transition: top 0.3s ease 0.40s;
+      transition: top 0.3s ease 0.40s; }
+    .banner .header-right nav ul li:nth-child(8) {
+      -moz-transition: top 0.3s ease 0.45s;
+      -o-transition: top 0.3s ease 0.45s;
+      -webkit-transition: top 0.3s ease;
+      -webkit-transition-delay: 0.45s;
+      -webkit-transition: top 0.3s ease 0.45s;
+      transition: top 0.3s ease 0.45s; }
