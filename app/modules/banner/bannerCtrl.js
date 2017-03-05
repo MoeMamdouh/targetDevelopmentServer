@@ -25,5 +25,14 @@
 			var state = 'Main.' + $scope.selectedMenuItem.name;
 			doStates.goState(state);
 		}
+		
+		(function($){
+			$(".menu-icon").on("click", function(){
+				$(this).toggleClass("open");
+				$(".container").toggleClass("nav-open");
+				$("nav ul li").toggleClass("animate");
+			});
+			
+		})(jQuery);
 	}
 })();
