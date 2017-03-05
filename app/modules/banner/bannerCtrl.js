@@ -4,6 +4,7 @@
 	bannerCtrl.$injector = ['$scope', 'doStates'];
 
 	function bannerCtrl($scope, doStates) {
+		$scope.logo = config.logo;
 		$scope.menus = config.menu;
 		$scope.selectedMenuItem = getStartedMenuObject();
 		//functions
