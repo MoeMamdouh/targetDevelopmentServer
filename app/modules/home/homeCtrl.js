@@ -18,13 +18,13 @@
 				description: 'Donec non nibh in dui sagittis finibus. Duis suscipit, arcu vel rhoncus molestie, ipsum velit mattis nibh, id congue lacus lorem a elit.',
 			},
 			{
-				id:1,
+				id:3,
 				icon: 'fa fa-cog',
 				title: 'Service 3',
 				description: 'Donec non nibh in dui sagittis finibus. Duis suscipit, arcu vel rhoncus molestie, ipsum velit mattis nibh, id congue lacus lorem a elit.',
 			},
 			{
-				id:1,
+				id:4,
 				icon: 'fa fa-hand-peace-o',
 				title: 'Service 4',
 				description: 'Donec non nibh in dui sagittis finibus. Duis suscipit, arcu vel rhoncus molestie, ipsum velit mattis nibh, id congue lacus lorem a elit.',

@@ -16,6 +16,7 @@ var target = angular.module('target', [
 })
 .config(function ($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise('home');
+
 	$stateProvider
 	.state('Main', {
 		views: {
@@ -28,9 +29,9 @@ var target = angular.module('target', [
 				controller: 'footerCtrl',
 			}
 		},
-		url: '',
 		abstract: true,
 	})
+
 	.state('Main.home', {
 		url: '/home',
 		module: 'home',
@@ -41,6 +42,7 @@ var target = angular.module('target', [
 			}
 		}
 	})
+	
 	.state('Main.about', {
 		url: '/about',
 		module: 'about',
