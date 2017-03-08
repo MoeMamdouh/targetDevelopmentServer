@@ -8,6 +8,7 @@ var target = angular.module('target', [
 	'ngResource',
 	'ui.router',
 	'bootstrapLightbox',
+	'ngMaterial',
 	
 ])
 .run(function($rootScope) {
