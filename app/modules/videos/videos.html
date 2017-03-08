@@ -1,6 +1,6 @@
 <ul class="gallery gallery5">
   <li ng-repeat="image in images">
-    <a ng-click="Lightbox.openModal(images, $index)">
+    <a ng-click="openLightboxModal($index)">
       <img ng-src="{{image.thumbUrl}}" class="img-thumbnail">
     </a>
   </li>
