@@ -7,6 +7,8 @@ var servicesDir = commonDir + '/services';
 var target = angular.module('target', [
 	'ngResource',
 	'ui.router',
+	'bootstrapLightbox',
+	
 ])
 .run(function($rootScope) {
 	$rootScope.appYear	 = config.appYear;
