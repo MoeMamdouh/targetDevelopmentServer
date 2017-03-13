@@ -4,7 +4,9 @@
 	videosCtrl.$injector = ['$scope', 'Lightbox'];
 
 	function videosCtrl($scope, Lightbox) {
-	  $scope.images = [
+		
+		$scope.groups = ['Academy', 'Union', 'Traning']
+		$scope.images = [
 			{
 			'type': 'video',
 			'url': 'https://www.youtube.com/watch?v=N7TkK2joi4I',
