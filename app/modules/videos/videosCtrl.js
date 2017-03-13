@@ -1,30 +1,46 @@
 (function() {
 	'use strict';
 	target.controller('videosCtrl', videosCtrl)
-	videosCtrl.$injector = ['$scope', 'Lightbox'];
+	videosCtrl.$injector = ['$scope'];
 
-	function videosCtrl($scope, Lightbox) {
+	function videosCtrl($scope) {
 		
-		$scope.groups = ['Academy', 'Union', 'Traning']
-		$scope.images = [
+		$scope.videos = [
 			{
-			'type': 'video',
-			'url': 'https://www.youtube.com/watch?v=N7TkK2joi4I',
-			'thumbUrl': 'https://i.ytimg.com/vi/N7TkK2joi4I/1.jpg'
+				id:1,
+				title:'video1',
+				type: 'academy',
+				url: 'https://www.youtube.com/watch?v=N7TkK2joi4I',
+				thumb: 'https://i.ytimg.com/vi/khrAhOrSZQc/1.jpg'
 			},
 			{
-			'url': 'https://upload.wikimedia.org/wikipedia/commons/0/07/Kamp_Alexisdorf_3.jpg',
-			'thumbUrl': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Kamp_Alexisdorf_3.jpg/120px-Kamp_Alexisdorf_3.jpg'
+				id:2,
+				title:'video2',
+				type: 'academy',
+				url: 'https://upload.wikimedia.org/wikipedia/commons/0/07/Kamp_Alexisdorf_3.jpg',
+				thumb: 'https://i.ytimg.com/vi/khrAhOrSZQc/1.jpg'
 			},
 			{
-			'type': 'video',
-			'url': 'https://www.youtube.com/watch?v=khrAhOrSZQc',
-			'thumbUrl': 'https://i.ytimg.com/vi/khrAhOrSZQc/1.jpg'
-			}
+				id:3,
+				title:'video3',
+				type: 'union',
+				url: 'https://www.youtube.com/watch?v=N7TkK2joi4I',
+				thumb: 'https://i.ytimg.com/vi/khrAhOrSZQc/1.jpg'
+			},
+			{
+				id:4,
+				title:'video4',
+				type: 'traning',
+				url: 'https://www.youtube.com/watch?v=N7TkK2joi4I',
+				thumb: 'https://i.ytimg.com/vi/N7TkK2joi4I/1.jpg'
+			},
+			{
+				id:5,
+				title:'video5',
+				type: 'traning',
+				url: 'https://www.youtube.com/watch?v=N7TkK2joi4I',
+				thumb: 'https://i.ytimg.com/vi/N7TkK2joi4I/1.jpg'
+			},
 		];
-
-		$scope.openLightboxModal = function (index) {
-			Lightbox.openModal($scope.images, index);
-		};
 	}
 })();

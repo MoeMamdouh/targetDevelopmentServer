@@ -1,0 +1,21 @@
+<div ng-cloak class="tabsdemoStaticTabs">
+    <md-content>
+        <md-tabs  md-dynamic-height md-border-bottom md-stretch-tabs="auto" md-center-tabs md-swipe-content> 
+            <md-tab ng-repeat="(groubName, groub) in groups">
+                <md-tab-label>
+                    {{groubName}}
+                </md-tab-label>
+
+                <md-tab-body class="md-padding">
+                    <ul class="gallery gallery5">
+                        <li ng-repeat="element in groub">
+                            <a ng-click="openLightboxModal(groub, $index)">
+                                <img ng-src="{{element.thumb}}" class="img-thumbnail">
+                            </a>
+                        </li>
+                    </ul>
+                </md-tab-body>
+            </md-tab>
+        </md-tabs>
+    </md-content>
+</div>

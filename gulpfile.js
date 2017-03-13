@@ -59,7 +59,7 @@ gulp.task('reload', function () {
 
 //watch changes in files
 gulp.task('watch', function () {
-	gulp.watch(['./' + root + '/**/**/*.*', ], ['sass', 'reload']);
+	gulp.watch(['./' + root + '/**/**/**/*.*', ], ['sass', 'reload']);
 });
 
 //open browser

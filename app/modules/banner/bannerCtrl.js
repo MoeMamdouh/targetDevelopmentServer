@@ -17,7 +17,7 @@
 			return $scope.selectedMenuItem
 		}
 		function menuItemClicked(menuItem) {
-			console.log('menuItem', menuItem)
+			// console.log('menuItem', menuItem)
 			$scope.selectedMenuItem = menuItem;
 			var state = 'Main.' + $scope.selectedMenuItem.name;
 			doStates.goState(state);
