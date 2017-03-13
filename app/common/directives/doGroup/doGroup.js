@@ -4,16 +4,16 @@
 
 	function doGroup(Lightbox){
 		return {
-			replace: true,
+			//replace: true,
 			restrict:'E',
 			templateUrl:'common/directives/doGroup/doGroup.html',
-			scope:{ data:"=" },
+			scope:{
+				data:"=",
+				type:"@"
+			},
 			link: function ($scope, iElement, iAttrs) {
-
-				$scope.groups = _.groupBy( $scope.data, 'type');
-
-				console.log('groups ', $scope.groups)
-
+				$scope.groups = _.groupBy( $scope.data, 'group');
+				// console.log('groups ', $scope.groups, $scope.type)
 				$scope.openLightboxModal = function (groub, index) {
 					console.log('groub ', groub)
 					Lightbox.openModal(groub, index);

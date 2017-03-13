@@ -7,7 +7,7 @@
                 </md-tab-label>
 
                 <md-tab-body class="md-padding">
-                    <ul class="gallery gallery5">
+                    <ul class="gallery gallery5" ng-if="type=='videos'">
                         <li ng-repeat="element in groub">
                             <a ng-click="openLightboxModal(groub, $index)">
                                 <img ng-src="{{element.thumb}}" class="img-thumbnail">
