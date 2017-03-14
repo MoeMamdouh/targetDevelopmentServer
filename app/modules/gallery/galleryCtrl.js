@@ -4,9 +4,10 @@
 	galleryCtrl.$injector = ['$scope', '$timeout'];
 
 	function galleryCtrl($scope, $timeout) {
-
-		window.onload=(function(){
+		
+		 $timeout((function(){
 			var $gallery = $('.gallery a').simpleLightbox();
+			
 			$gallery.on('show.simplelightbox', function(){
 				console.log('Requested for showing');
 			})
@@ -47,12 +48,12 @@
 				console.log('No image found, go to the next/prev');
 				console.log(e);
 			});
-		})
+		}), 500);
 		$scope.images = [
 			{
 				id:1,
 				title:'Maecenas aliquam nec arcu at efficitur. Praesent cursus aliquam erat a commodo.',
-				group: 'academy',
+				group: 'union',
 				url: 'images/g1.jpg',
 				thumb: '',
 				desc:'',
@@ -124,7 +125,7 @@
 			{
 				id:10,
 				title:'image5',
-				group: 'traning',
+				group: 'union',
 				url: 'images/g5.jpg',
 				thumb: '',
 				desc:'',
@@ -132,7 +133,7 @@
 			{
 				id:11,
 				title:'image5',
-				group: 'traning',
+				group: 'union',
 				url: 'images/g5.jpg',
 				thumb: '',
 				desc:'',
@@ -140,7 +141,7 @@
 			{
 				id:12,
 				title:'image5',
-				group: 'traning',
+				group: 'union',
 				url: 'images/g5.jpg',
 				thumb: '',
 				desc:'',

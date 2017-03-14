@@ -18,8 +18,6 @@
 					console.log('groub ', groub)
 					Lightbox.openModal(groub, index);
 				};
-				
-				
 			}
 		}
 	}

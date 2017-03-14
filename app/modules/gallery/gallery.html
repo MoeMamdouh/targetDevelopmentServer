@@ -1,13 +1,1 @@
-<!-- gallery -->
-<div class="gallery-top">
-    <div class="container">
-        <div class="gallery">	
-            <div class="gallery-small gallery-middle" ng-repeat="image in images">
-                <div class="agileits-gallery gallery-small-text effect-3">
-                    <a ng-href="{{image.url}}"><img ng-src="{{image.url}}" alt="" title="{{image.title}}"/></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- //gallery -->
+<do-group data="images" type="images"></do-group>
