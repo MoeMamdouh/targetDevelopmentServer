@@ -11,7 +11,7 @@ var root = 'app';
 var paths = {
 	sass: [
 		root + '/modules/**/*.scss',
-		// 'www/common/directives/**/*.scss',
+		root + '/common/directives/**/*.scss',
 	]
 };
 

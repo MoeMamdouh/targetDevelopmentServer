@@ -1,49 +1,13 @@
-.tabsdemoStaticTabs md-content md-tabs {
-  border: 0; }
-
-.tabsdemoStaticTabs md-content md-tabs md-tab-content {
-  padding-top: 25px; }
-
-.tabsdemoStaticTabs .after-tabs-area > span {
-  margin-top: 25px;
-  padding-right: 15px;
-  vertical-align: middle;
-  line-height: 30px;
-  height: 35px; }
-
-.tabsdemoStaticTabs .after-tabs-area > md-checkbox {
-  margin-top: 26px;
-  margin-left: 0; }
-
-md-tabs {
-  background: white;
-  border: 1px solid #e1e1e1; }
-
-.gallery {
+.video-view .video-gallery {
+  margin: 0;
   padding: 0; }
-
-.gallery li {
-  display: inline-block;
-  margin: 0 1em 1em 0;
-  list-style-type: none;
-  text-align: center; }
-
-@media (max-width: 767px) {
-  .gallery li {
-    margin: 0; } }
-
-.gallery1 img {
-  width: 75px;
-  height: 75px; }
-
-.gallery2 img {
-  width: 6em; }
-
-.gallery5 img {
-  width: 300px; }
-
-.demo-tab {
-  font-size: 20px;
-  color: black;
-  font-weight: bold;
-  letter-spacing: 4px; }
+  .video-view .video-gallery li {
+    display: inline-block;
+    margin: 0 1em 1em 0;
+    list-style-type: none;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .video-view .video-gallery li {
+        margin: 0; } }
+  .video-view .video-gallery img {
+    width: 300px; }
