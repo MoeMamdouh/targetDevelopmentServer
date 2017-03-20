@@ -50,7 +50,8 @@ gulp.task('watch', function () {
 	gulp.watch([
 		'./' + root + '/**/**/**/*.*',
 		'!./' + root + '/**/**/**/*.css'
-	 ], ['reload']);
+	 ]
+	 , ['reload']);
 });
 
 //open browser
