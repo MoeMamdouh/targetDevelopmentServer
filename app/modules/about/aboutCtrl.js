@@ -52,7 +52,8 @@
 				icon1: 'fa fa-facebook',
 				icon2: 'fa fa-twitter',
 				icon3: 'fa fa-google-plus',
-				title: 'Shane Smith',
+				title1: 'Shane',
+				title2: 'Smith',
                 url: 'images/t2.jpg',			
 			},
 			{
@@ -60,7 +61,8 @@
 				icon1: 'fa fa-facebook',
 				icon2: 'fa fa-twitter',
 				icon3: 'fa fa-google-plus',
-				title: 'Shane Smith',
+				title1: 'Shane',
+				title2: 'Smith',
 				url: 'images/t3.jpg',			
 			},			
 
@@ -69,7 +71,8 @@
 				icon1: 'fa fa-facebook',
 				icon2: 'fa fa-twitter',
 				icon3: 'fa fa-google-plus',
-				title: 'Suspendisse ornare vitae ex nec aliquam',
+				title1: 'Shane',
+				title2: 'Smith',
 				url: 'images/t4.jpg',			
 			},
 		];
