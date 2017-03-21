@@ -1,16 +1,3 @@
-// var gulp = require('gulp');
-// var webserver = require('gulp-webserver');
- 
-// gulp.task('webserver', function() {
-// 	gulp.src('./app')
-// 	.pipe(webserver({
-// 		livereload: true,
-// 		//   directoryListing: true,
-// 		fallback: './index.html',
-// 		open: true
-// 	}));
-// });
-
 var gulp = require('gulp');
 var connect = require('gulp-connect');
 var open = require('gulp-open');
@@ -24,7 +11,7 @@ var root = 'app';
 var paths = {
 	sass: [
 		root + '/modules/**/*.scss',
-		// 'www/common/directives/**/*.scss',
+		root + '/common/directives/**/*.scss',
 	]
 };
 
@@ -59,7 +46,12 @@ gulp.task('reload', function () {
 
 //watch changes in files
 gulp.task('watch', function () {
-	gulp.watch(['./' + root + '/**/**/**/*.*', ], ['sass', 'reload']);
+	gulp.watch(paths.sass, ['sass']);
+	gulp.watch([
+		'./' + root + '/**/**/**/*.*',
+		'!./' + root + '/**/**/**/*.css'
+	 ]
+	 , ['reload']);
 });
 
 //open browser

@@ -1,14 +1,16 @@
 <div ng-cloak class="tabsdemoStaticTabs">
 	<md-content>
-		<md-tabs  md-dynamic-height md-border-bottom md-stretch-tabs="auto" md-center-tabs md-swipe-content> 
+		<md-tabs  md-dynamic-height md-stretch-tabs="auto" md-center-tabs md-swipe-content> <!--md-border-bottom -->
 			<md-tab ng-repeat="(groubName, groub) in groups">
 				<md-tab-label>
-					{{groubName}}
+					<div class="do-tab">
+						{{groubName}}
+					</div>
 				</md-tab-label>
 
 				<md-tab-body class="md-padding">
 					<!-- videos -->
-					<ul class="gallery gallery5" ng-if="type=='videos'">
+					<ul class="video-gallery" ng-if="type=='videos'">
 						<li ng-repeat="element in groub">
 							<a ng-click="openLightboxModal(groub, $index)">
 								<img ng-src="{{element.thumb}}" class="img-thumbnail">
@@ -18,14 +20,10 @@
 					<!-- //videos -->
 
 					<!-- gallery -->
-					<div class="gallery-top" ng-if="type=='images'">
-						<div class="container">
-							<div class="gallery">	
-								<div class="gallery-small gallery-middle" ng-repeat="image in groub">
-									<div class="agileits-gallery gallery-small-text effect-3">
-										<a ng-href="{{image.url}}"><img ng-src="{{image.url}}" alt="" title="{{image.title}}"/></a>
-									</div>
-								</div>
+					<div  ng-if="type=='images'">
+						<div class="gallery-small gallery-middle" ng-repeat="image in groub">
+							<div class="agileits-gallery gallery-small-text effect-3">
+								<a ng-href="{{image.url}}"><img ng-src="{{image.url}}" alt="" title="{{image.title}}"/></a>
 							</div>
 						</div>
 					</div>

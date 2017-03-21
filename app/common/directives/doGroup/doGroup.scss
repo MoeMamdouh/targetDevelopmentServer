@@ -1,0 +1,33 @@
+.tabsdemoStaticTabs {
+	md-content{
+		md-tabs{
+			border: 0;
+			background: white;
+			md-tab-content {
+				padding-top: 25px;
+				// &:nth-child(1) {
+				//     background-color: #b7b7b7;
+				// }
+			}
+			.do-tab {
+				font-size: 20px;
+				color: black;
+				font-weight: bold;
+				letter-spacing: 4px;
+			}
+		}
+	}
+	.after-tabs-area > span {
+		margin-top: 25px;
+		padding-right: 15px;
+		vertical-align: middle;
+		line-height: 30px;
+		height: 35px;
+	}
+	.after-tabs-area > md-checkbox {
+		margin-top: 26px;
+		margin-left: 0;
+	}
+} 
+
+
