@@ -31,27 +31,25 @@
 			},
 		]
 
-		$(window).load(function() {
-			// Slideshow 4
-			$("#slider3").responsiveSlides({
-				auto: true,
-				pager:false,
-				nav:false,
-				speed: 500,
-				namespace: "callbacks",
-				before: function () {
-					$('.events').append("<li>before event fired.</li>");
-				},
-				after: function () {
-					$('.events').append("<li>after event fired.</li>");
-				}
-			});
-
-			$('.jarallax').jarallax({
-				speed: 0.5,
-				imgWidth: 1366,
-				imgHeight: 768
-			})
+		// Slideshow 4
+		$("#slider3").responsiveSlides({
+			auto: true,
+			pager:false,
+			nav:false,
+			speed: 500,
+			namespace: "callbacks",
+			before: function () {
+				$('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+				$('.events').append("<li>after event fired.</li>");
+			}
 		});
+
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
 	}
 })();
