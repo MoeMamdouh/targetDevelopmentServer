@@ -30,5 +30,30 @@
 				description: 'Donec non nibh in dui sagittis finibus. Duis suscipit, arcu vel rhoncus molestie, ipsum velit mattis nibh, id congue lacus lorem a elit.',
 			},
 		]
+
+		//$(window).load(function() {
+		$(function () {
+			// Slideshow 4
+			$("#slider3").responsiveSlides({
+			auto: true,
+			pager:false,
+			nav:false,
+			speed: 500,
+			namespace: "callbacks",
+			before: function () {
+				$('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+				$('.events').append("<li>after event fired.</li>");
+			}
+			});
+	
+		});
+
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
 	}
 })();
