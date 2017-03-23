@@ -31,10 +31,8 @@
 			},
 		]
 
-		//$(window).load(function() {
-		$(function () {
-			// Slideshow 4
-			$("#slider3").responsiveSlides({
+		// Slideshow 4
+		$("#slider3").responsiveSlides({
 			auto: true,
 			pager:false,
 			nav:false,
@@ -46,8 +44,6 @@
 			after: function () {
 				$('.events').append("<li>after event fired.</li>");
 			}
-			});
-	
 		});
 
 		$('.jarallax').jarallax({

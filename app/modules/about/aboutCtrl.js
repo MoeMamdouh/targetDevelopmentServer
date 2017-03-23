@@ -4,8 +4,18 @@
 	aboutCtrl.$injector = ['$scope'];
 
 	function aboutCtrl($scope) {
+
+		/* init Jarallax */
+		$(window).load(function() {
+			$('.jarallax').jarallax({
+				speed: 0.5,
+				imgWidth: 1366,
+				imgHeight: 768
+			})
+		})
+		
       	console.log('Yes We Can :D')
-	$scope.services = [
+		$scope.services = [
 			{
 				id:1,
 				icon: 'fa fa-user',
@@ -24,9 +34,9 @@
 				title: 'Suspendisse ornare vitae ex nec aliquam',
 				description: 'Nunc et massa ut purus porta euismod quis eu erat. Nam ornare faucibus elit sed tempor. Quisque iaculis odio nibh, et auctor tellus rhoncus vel. Maecenas arcu neque, semper eu commodo ut, pharetra vitae erat.',
 			},
-
 		];
-	$scope.images = [
+
+		$scope.images = [
 			{
 				id:1,
 				title:'Curabitur non blandit justo',
@@ -46,6 +56,7 @@
 				desc:'Pellentesque auctor euismod lectus a pretium. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur ut elit at est tempus volutpat.nascetur ridiculus mus. Curabitur ut elit at est tempus volutpat.',
 			},
 		];
+
 		$scope.Teames = [
 			{
 				id:1,
@@ -76,6 +87,7 @@
 				url: 'images/t4.jpg',			
 			},
 		];
+		
 		console.log('The End Brac')
 	}
 })();
