@@ -1,1 +1,36 @@
-schedules
+<div class="content-padding schedule-view">
+	<div class="container">
+		<div class="top-buffer">
+			<h2 class="custome-heading">Select Month</h2>
+			<md-input-container class="selectMonthInput top-buffer">
+				<label>Select Month :</label>
+				<md-select ng-model="selectedMonth">
+					<md-option ng-value="month" ng-repeat="month in monthNames">
+						<em>{{ month }}</em>
+					</md-option>
+				</md-select>
+			</md-input-container>
+		</div>
+		
+		<div class="extra-top-buffer">
+			<h2 class="custome-heading">Schedule Of :</h2>
+			<div class="top-buffer">
+				<md-radio-group ng-model="selectedType">
+					<md-radio-button value="academy" class="md-warn">Academy</md-radio-button>
+					<md-radio-button value="union" class="md-warn"> Union </md-radio-button>
+				</md-radio-group>
+			</div>
+		</div>
+		
+		<div class="row top-buffer text-center">
+			<md-button class="md-raised md-warn" ng-if="selectedMonth && selectedType">
+				<h4>
+					<a ng-href="http://www.calendarpedia.com/download/months/2017/june-2017-calendar-landscape.pdf">
+						<span class="label">Download Schedule</span>
+					</a>
+				</h4>
+			</md-button>
+		</div>
+		
+	</div>
+</div>

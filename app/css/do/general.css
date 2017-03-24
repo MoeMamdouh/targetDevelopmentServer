@@ -1,0 +1,29 @@
+.content-padding {
+	padding:4em 0;
+	background:#FFFFFF;
+}
+@media(max-width:480px) {
+    .content-padding{
+        padding:2em 0;
+    }
+}
+
+.custome-heading {
+    color: #f35041;
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.extra-top-buffer {
+    margin-top:50px;
+}
+
+.top-buffer {
+    margin-top:20px;
+}
+.md-top-buffer {
+    margin-top:10px;
+}

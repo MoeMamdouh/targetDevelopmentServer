@@ -4,6 +4,6 @@
 	schedulesCtrl.$injector = ['$scope'];
 
 	function schedulesCtrl($scope) {
-      	console.log('about Ctrl')
+		   $scope.monthNames = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
 	}
 })();
