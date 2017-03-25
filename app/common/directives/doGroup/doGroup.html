@@ -21,7 +21,7 @@
 					<!-- //videos -->
 
 					<!-- gallery -->
-					<div  ng-if="type=='images'">
+					<div ng-if="type=='images'">
 						<div class="gallery-small gallery-middle" ng-repeat="image in groub">
 							<div class="agileits-gallery gallery-small-text effect-3">
 								<a ng-href="{{image.url}}"><img ng-src="{{image.url}}" alt="" title="{{image.title}}"/></a>
@@ -29,6 +29,30 @@
 						</div>
 					</div>
 					<!-- //gallery -->
+
+					<!-- news -->
+					<div ng-if="type=='news'">
+						<div ng-init="splitedNews = split(groub, 3)">
+							<div ng-repeat="news in splitedNews">
+								<div class="col-sm-4 wthree-top-grid news-item" ng-repeat="newsObject in news" ng-class="{'no-border': $index==1}">	
+									<img ng-src="http://placehold.it/500x500" alt="" />
+									<!--<img ng-src="{{newsObject.url}}" alt="" />-->
+									<h4 class="title">{{newsObject.title}}</h4>
+									<p class="date">
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										<span>Friday, June 24, 2016 1:42 AM</span>
+										</p>
+									<p class="user">
+										<i class="fa fa-user" aria-hidden="true"></i>
+										<span>Target Admin</span>
+									</p>
+									<p class="description">{{newsObject.desc}}</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<!-- //news -->
 				</md-tab-body>
 			</md-tab>
 		</md-tabs>

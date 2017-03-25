@@ -1,0 +1,12 @@
+.news-view .news-item {
+  border-left: solid 1px #ddd;
+  border-right: solid 1px #ddd;
+  padding-top: 20px; }
+  .news-view .news-item .title {
+    margin-bottom: 0; }
+  .news-view .news-item .description {
+    padding-bottom: 10px;
+    border-bottom: solid 1px #ddd; }
+  .news-view .news-item .date, .news-view .news-item .user {
+    color: #f35041;
+    font-size: 0.8em; }
