@@ -113,27 +113,7 @@
 									</li>
 								</ul>
 							</div>
-							<script src="lib/js/responsiveslides.min.js"></script>
-							<script>
-								// You can also use "$(window).load(function() {"
-								$(function () {
-								  // Slideshow 4
-								  $("#slider4").responsiveSlides({
-									auto: true,
-									pager:true,
-									nav:false,
-									speed: 500,
-									namespace: "callbacks",
-									before: function () {
-									  $('.events').append("<li>before event fired.</li>");
-									},
-									after: function () {
-									  $('.events').append("<li>after event fired.</li>");
-									}
-								  });
-							
-								});
-							 </script>
+
 							<!--banner Slider starts Here-->
 						</div>
 					</div>
@@ -180,7 +160,7 @@
 	<div class="jarallax history">
 		<div class="container">
 			<div class="agileinfo-history-grids">
-				<div class="slider">
+               <div class="slider">
 					<div class="callbacks_container">
 						<ul class="rslides" id="slider3">
 							<li>
@@ -212,69 +192,23 @@
 	</div>
 	<!-- //history -->
 	
-	<!-- rides -->
+	<!-- newses -->
 	<div class="rides">
 		<div class="container">
 			<div class="w3-agileits-rides-heading">
-				<h3>Recent Rides</h3>
+				<h3>Latest News</h3>
 			</div>
 			<div class="agileits-w3layouts-rides-grids">
-				<div class="col-sm-4 rides-grid">
+				<div class="col-sm-4 rides-grid" ng-repeat="news in newses">
 					<div class="rides-grid-info">
-						<img src="images/r1.jpg" alt="" />
-						<h4>Nullam tristique faucibus</h4>
-						<p>Pellentesque auctor euismod lectus a pretium. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur ut elit at est tempus volutpat.</p>
-					</div>
-				</div>
-				<div class="col-sm-4 rides-grid">
-					<div class="rides-grid-info">
-						<img src="images/r2.jpg" alt="" />
-						<h4> Ut ultricies, dui a tincidunt</h4>
-						<p>Pellentesque auctor euismod lectus a pretium. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur ut elit at est tempus volutpat.</p>
-					</div>
-				</div>
-				<div class="col-sm-4 rides-grid">
-					<div class="rides-grid-info">
-						<img src="images/r3.jpg" alt="" />
-						<h4>Curabitur non blandit justo</h4>
-						<p>Pellentesque auctor euismod lectus a pretium. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur ut elit at est tempus volutpat.</p>
+						<img ng-src="{{news.url}}" alt="" />
+						<h4>{{news.title}}</h4>
+						<p>{{news.description}}</p>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-			<div class="agileits-w3layouts-rides-grids">
-				<div class="col-sm-4 rides-grid">
-					<div class="rides-grid-info">
-						<img src="images/r4.jpg" alt="" />
-						<h4>Nullam tristique faucibus</h4>
-						<p>Pellentesque auctor euismod lectus a pretium. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur ut elit at est tempus volutpat.</p>
-						<ul>
-							<li><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="single.html">Nullam tristique faucibus pharetra.</a></li>
-							<li><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="single.html">Pellentesque auctor</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-sm-4 rides-grid">
-					<div class="rides-grid-info">
-						<img src="images/r5.jpg" alt="" />
-						<h4> Ut ultricies, dui a tincidunt</h4>
-						<p>Pellentesque auctor euismod lectus a pretium. Cum sociis natoque</p>
-						<ul>
-							<li><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="single.html">Nullam tristique faucibus pharetra.</a></li>
-							<li><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="single.html">Ut ultricies, dui a tincidunt placerat</a></li>
-							<li><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="single.html">Pellentesque auctor</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-sm-4 rides-grid">
-					<div class="rides-grid-info">
-						<img src="images/r6.jpg" alt="" />
-						<h4>Curabitur non blandit justo</h4>
-						<p>Pellentesque auctor euismod lectus a pretium. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur ut elit at est tempus volutpat.nascetur ridiculus mus. Curabitur ut elit at est tempus volutpat.</p>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
+
 		</div>
 	</div>
 	<!-- //rides -->
