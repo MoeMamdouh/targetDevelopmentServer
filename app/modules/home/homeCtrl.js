@@ -30,9 +30,11 @@
 				description: 'Donec non nibh in dui sagittis finibus. Duis suscipit, arcu vel rhoncus molestie, ipsum velit mattis nibh, id congue lacus lorem a elit.',
 			},
 		]
-$scope.slides = [
+
+		$scope.slides = [
 			{name: 'Not my cat.', url: 'https://farm2.staticflickr.com/1318/5114665665_e55b2c2169_n.jpg'},
-			{name: 'Again, not my cat.', url: 'https://farm2.staticflickr.com/1079/901626554_8bc51ec160_n.jpg'}]
+			{name: 'Again, not my cat.', url: 'https://farm2.staticflickr.com/1079/901626554_8bc51ec160_n.jpg'}
+		]
 		$scope.newses = [
 			{
 				id:1,
@@ -72,43 +74,43 @@ $scope.slides = [
 			},
 		]
 
-		// Slideshow 4
-		$(window).load(function() {
-		$("#slider3").responsiveSlides({
-			auto: true,
-			pager:false,
-			nav:false,
-			speed: 500,
-			namespace: "callbacks",
-			before: function () {
-				$('.events').append("<li>before event fired.</li>");
-			},
-			after: function () {
-				$('.events').append("<li>after event fired.</li>");
-			}
-		});
-								
-	    // Slideshow 4
-		$("#slider4").responsiveSlides({
-			auto: true,
-			pager:true,
-			nav:false,
-			speed: 500,
-			namespace: "callbacks",
-			before: function () {
-			$('.events').append("<li>before event fired.</li>");
-			},
-			after: function () {
-			$('.events').append("<li>after event fired.</li>");
-			}
-		});
-							
-								
-		$('.jarallax').jarallax({
-			speed: 0.5,
-			imgWidth: 1366,
-			imgHeight: 768
+
+		  $scope.$on('$viewContentLoaded', function(){
+			//Here your view content is fully loaded !!
+			$('.jarallax').jarallax({
+				speed: 0.5,
+				imgWidth: 1366,
+				imgHeight: 768
 			})
-		})
+
+			$("#slider3").responsiveSlides({
+				auto: true,
+				pager:false,
+				nav:false,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+									
+			// Slideshow 4
+			$("#slider4").responsiveSlides({
+				auto: true,
+				pager:true,
+				nav:false,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+				$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+				$('.events').append("<li>after event fired.</li>");
+				}
+			});
+		});
 	}
 })();
