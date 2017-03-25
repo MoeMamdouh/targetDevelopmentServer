@@ -18,7 +18,7 @@ var target = angular.module('target', [
 	$rootScope.DoUrl 	= Do.DoUrl;
 })
 .config(function ($stateProvider, $urlRouterProvider) {
-	$urlRouterProvider.otherwise('home');
+	//$urlRouterProvider.otherwise('home');
 
 	$stateProvider
 	.state('Main', {
