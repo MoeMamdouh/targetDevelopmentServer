@@ -20,11 +20,11 @@
 						<h3>Send us a message</h3>
 					</div>
 					<div class="agileinfo-contact-form-grid">
-						<form action="#" method="post">
-							<input type="text" name="Name" placeholder="Name" required="">
-							<input type="email" name="Email" placeholder="Email" required="">
-							<input type="text" name="Telephone" placeholder="Telephone" required="">
-							<textarea name="Message" placeholder="Message" required=""></textarea>
+						<form  ng-submit="sendMail(Name, Email, Telephone, Message)">
+							<input type="text" name="Name" placeholder="Name" required="" ng-model="Name">
+							<input type="email" name="Email" placeholder="Email" required="" ng-model="Email">
+							<input type="text" name="Telephone" placeholder="Telephone" required="" ng-model="Telephone">
+							<textarea name="Message" placeholder="Message" required="" ng-model="Message"></textarea>
 							<button class="btn1">Submit</button>
 						</form>
 					</div>
