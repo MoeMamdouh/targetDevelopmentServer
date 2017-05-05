@@ -1,9 +1,9 @@
 (function() {
 	'use strict';
 	target.controller('bannerCtrl', bannerCtrl)
-	bannerCtrl.$injector = ['$scope', 'doStates'];
+	bannerCtrl.$injector = ['$scope', 'doStates', '$state'];
 
-	function bannerCtrl($scope, doStates) {
+	function bannerCtrl($scope, doStates, $state) {
 		$scope.logo = config.logo;
 		$scope.menus = config.menu;
 		$scope.selectedMenuItem = getStartedMenuObject();
@@ -19,8 +19,10 @@
 		function menuItemClicked(menuItem) {
 			// console.log('menuItem', menuItem)
 			$scope.selectedMenuItem = menuItem;
+			// var state = $scope.selectedMenuItem.name;
 			var state = 'Main.' + $scope.selectedMenuItem.name;
 			doStates.goState(state);
+			// $state.go(state)
 		}
 		
 		(function($){

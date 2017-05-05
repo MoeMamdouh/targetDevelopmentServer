@@ -58,6 +58,7 @@ gulp.task('watch', function () {
 gulp.task('openBrowser', function(){
 	var options = {
 		uri: 'http://localhost:'+port,
+		// uri: 'http://localhost:'+port + '/#/home',
 		app: 'google chrome'
 	};
 	gulp.src('./' + root + '/index.html')
